@@ -762,6 +762,17 @@ Skills
   left: 10%;
 }
 
+@media screen and (max-width: 400px) {
+  .skill-text-10-react {
+    left: 18%;
+  }
+  .skill-text-30-python {
+    left: 30%;
+  }
+  .skill-text-0-node {
+    left: 20%;
+  }
+}
 /*
 =============== 
 Timeline
