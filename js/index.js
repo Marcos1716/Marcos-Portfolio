@@ -1,4 +1,24 @@
 const eduBox = document.querySelector('.education-box');
+const timelineBox = document.querySelector('.timeline-box');
+const displayTimeline = () => {
+  const newData = timeLine
+    .map((item) => {
+      return `<!-- single timeline item -->
+  <article class="timeline-item">
+    <h4>${item.year}</h4>
+    <p class="works-name">${item.work}</p>
+    <p>
+    ${item.jobDes}
+    </p>
+
+    <span class="number"> ${item.id} </span>
+  </article>
+  <!-- end of  single timeline item -->`;
+    })
+    .join('');
+
+  timelineBox.innerHTML = newData;
+};
 
 const displayEdu = () => {
   const newData = education
@@ -28,5 +48,6 @@ const displayEdu = () => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
+  displayTimeline();
   displayEdu();
 });
