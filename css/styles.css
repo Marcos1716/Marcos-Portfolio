@@ -914,7 +914,7 @@ Blog
   color: var(--clr-primary-5);
   font-size: 0.85rem;
 }
-.blog-center {
+.education-center {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 3rem 1rem;
