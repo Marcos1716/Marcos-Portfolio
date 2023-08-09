@@ -1,5 +1,7 @@
 const eduBox = document.querySelector('.education-box');
 const timelineBox = document.querySelector('.timeline-box');
+
+//*functions
 const displayTimeline = () => {
   const newData = timeLine
     .map((item) => {
