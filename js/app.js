@@ -10,11 +10,14 @@ const logo = document.querySelector('.logo');
 const sections = document.querySelectorAll('.section');
 const header = document.querySelector('.hero');
 
-logo.addEventListener('click', (e) => {
-  e.preventDefault();
+if (logo) {
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 // * Add fixed class to navbar
 const navHeight = navbar.getBoundingClientRect().height;
 const navCallback = (entries) => {

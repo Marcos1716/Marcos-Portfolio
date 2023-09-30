@@ -354,6 +354,7 @@ Hero
 }
 .hero-img {
   display: none;
+  animation: headerImg 2s;
 }
 .hero {
   height: 100vh;
@@ -363,6 +364,9 @@ Hero
   min-height: calc(100vh - 5rem);
   display: grid;
   place-items: center;
+}
+.hero-info {
+  animation: headerAnim 2s;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
@@ -1034,4 +1038,24 @@ Products Page
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 3rem 1rem;
+}
+
+/* * ANIMATION */
+
+@keyframes headerAnim {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes headerImg {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
