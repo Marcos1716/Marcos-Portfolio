@@ -1,3 +1,5 @@
+'use strict';
+
 const education = [
   {
     id: 1,

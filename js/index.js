@@ -1,3 +1,5 @@
+'use strict';
+
 const eduBox = document.querySelector('.education-box');
 const timelineBox = document.querySelector('.timeline-box');
 
