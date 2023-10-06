@@ -60,6 +60,9 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 100%;
+}
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-white);
@@ -862,8 +865,8 @@ Blog
   perspective: 1500px;
 }
 .card-side {
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
